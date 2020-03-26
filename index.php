@@ -1,10 +1,6 @@
 <?php
 
 $install = true;
-if ($install) {
-  echo "merci de finir l'instalation ;)";
-  die();
-}
 $zip = new ZipArchive;
 
 if (!file_exists('./prestashop')) {
