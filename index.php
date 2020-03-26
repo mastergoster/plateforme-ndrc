@@ -1,6 +1,6 @@
 <?php
 
-$install = true;
+$install = 'prestashop';
 $zip = new ZipArchive;
 
 if (!file_exists('./prestashop')) {
@@ -30,16 +30,15 @@ if (file_exists('./prestashop/install') && !file_exists('./prestashop/admin')) {
 foreach (scandir('./prestashop/') as $dir) {
   if (substr($dir, 0, 5) == "admin" && strlen($dir) > 5) {
     $adminpresta = $dir;
-    $install = false;
+    $install = "wordpress";
   }
 }
 if (file_exists('./wordpress/wp-config.php')) {
   $install = false;
-} else {
-  $install = true;
 }
+
 if ($install) {
-  echo "merci de finir l'instalation ;)";
+  echo "merci de finir l'instalation ;)<br/> <a href=\"" . $install . "\">" . $install . "</a>";
   die();
 }
 ?>
