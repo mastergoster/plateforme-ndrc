@@ -1,5 +1,10 @@
 <?php
+
 $install = true;
+if ($install) {
+  echo "merci de finir l'instalation ;)";
+  die();
+}
 $zip = new ZipArchive;
 
 if (!file_exists('./prestashop')) {
@@ -53,12 +58,12 @@ if ($install) {
   <meta name="keywords" content="">
   <meta name="author" content="FIORI Stéphane pour Groupe Alternance">
   <title>Plateforme NDRC</title>
-  <link rel="icon" type="image/png" href="/img/icone_groupe-alternance32.png">
-  <link rel="stylesheet" href="/img/font-awesome.min.css">
-  <link href="/img/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  <link href="/img/mdb.min.css" rel="stylesheet">
-  <link href="/img/style.css" rel="stylesheet">
-  <link href="/img/pagination.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/assets/img/icone_groupe-alternance32.png">
+  <link rel="stylesheet" href="/assets/style/font-awesome.min.css">
+  <link href="/assets/style/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link href="/assets/style/mdb.min.css" rel="stylesheet">
+  <link href="/assets/style/style.css" rel="stylesheet">
+  <link href="/assets/style/pagination.css" rel="stylesheet">
 </head>
 
 <body class="fixed-sn">
@@ -224,7 +229,7 @@ if ($install) {
       margin: 0px;
     }
   </style>
-  <div class="flottant"><img src="/img/logo_groupe_alternance.png" width="183" height="105"></div>
+  <div class="flottant"><img src="/assets/img/logo_groupe_alternance.png" width="183" height="105"></div>
   <div>
     <main>
       <div class="container-fluid">
@@ -242,7 +247,7 @@ if ($install) {
                         </div>
                         <div class="avatar mx-auto white">
                           <div class="view overlay">
-                            <img src="/img/presta.png" class="rounded-circle">
+                            <img src="/assets/img/presta.png" class="rounded-circle">
                             <div class="mask flex-center rgba-black-strong" data-appli="rando">
                               <a href="/prestashop/">
                                 <p class="white-text">Magasin en<br>ligne</p>
@@ -261,7 +266,7 @@ if ($install) {
                         </div>
                         <div class="avatar mx-auto white">
                           <div class="view overlay">
-                            <img src="/img/wordpress.png" class="rounded-circle">
+                            <img src="/assets/img/wordpress.png" class="rounded-circle">
                             <div class="mask flex-center rgba-black-strong" data-appli="blog">
                               <a href="/wordpress/">
                                 <p class="white-text">Blog<br>WordPress</p>
@@ -304,7 +309,7 @@ if ($install) {
                         </div>
                         <div class="avatar mx-auto white">
                           <div class="view overlay">
-                            <img src="/img/presta.png" class="rounded-circle">
+                            <img src="/assets/img/presta.png" class="rounded-circle">
                             <div class="mask flex-center rgba-black-strong" data-appli="rando">
                               <a href="/prestashop/<?= $adminpresta ?>/">
                                 <p class="white-text">Magasin en<br>ligne</p>
@@ -323,7 +328,7 @@ if ($install) {
                         </div>
                         <div class="avatar mx-auto white">
                           <div class="view overlay">
-                            <img src="/img/wordpress.png" class="rounded-circle">
+                            <img src="/assets/img/wordpress.png" class="rounded-circle">
                             <div class="mask flex-center rgba-black-strong" data-appli="blog">
                               <a href="/wordpress/wp-admin/">
                                 <p class="white-text">Blog<br>WordPress</p>
